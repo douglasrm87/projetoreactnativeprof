@@ -12,7 +12,7 @@ import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
+  StatusBar, 
   StyleSheet,
   Text,
   useColorScheme,
@@ -39,7 +39,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   return (
     <View style={styles.sectionContainer}>
       <Text
-        style={[ 
+        style={[
           styles.sectionTitle,
           {
             color: isDarkMode ? Colors.white : Colors.black,
@@ -77,14 +77,26 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="Sessão 01">
+            Arquivo principal: <Text style={styles.highlight}>App.tsx</Text>. arquivo codificado em TypeScript, evolução do Javascript.
+          </Section>
+          <Section title="Disciplina Extencionista. experiência que o aluno precisa.">
+            <ReloadInstructions />
+          </Section>
           <Section title="Não deixe de aprender a usar o Debug">
             {/*<DebugInstructions /> */}
             <TelaLogin />
+ 
           </Section>
+          <Section title="Aprenda mais com o conteúdo digital.">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
