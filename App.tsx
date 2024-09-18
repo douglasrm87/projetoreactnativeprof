@@ -63,6 +63,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
+
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
@@ -81,9 +82,10 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Não deixe de aprender a usar o Debug">
+          <Section title="Disciplina extensionista">
             {/*<DebugInstructions /> */}
-            <TelaLogin />
+            {/*<TelaLogin estadoUsuario={funcaoProcessarEstadoUsuario} />*/}
+            <Login estadoUsuario={"Não Logado"} />
           </Section>
         </View>
       </ScrollView>
