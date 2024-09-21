@@ -5,9 +5,10 @@ import type {Node} from 'react';
 import React from 'react';
 import { Button, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
 
- 
+import {  TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 function confereLogin(login, senha){
-
+    
     const loginDefault = 'drm'
     const senhaDefault = '123'
 
@@ -21,6 +22,7 @@ const funcaoDuvidas = ( ) => {
     alert("Informar seu nome e senha numérica registradas.");
  
 };
+ 
 const styles = StyleSheet.create({
     input: {
       height: 40,
@@ -34,11 +36,11 @@ const styles = StyleSheet.create({
       },
   });
  
-const TelaLogin = ({estadoUsuario}) => {
+const TelaLogin  =  ({navigation}) => {
     const [login, setLogin] = React.useState('');
     const [senha, setSenha] = React.useState(0);
   
-
+   
     return (
         <View style={styles.linkcontainer}>
             <Text   onPress={funcaoDuvidas} style={styles.baseText}>
@@ -66,6 +68,12 @@ const TelaLogin = ({estadoUsuario}) => {
                 onPress={() => {
                     confereLogin(login, senha)
             }}/>
+            <View>
+                <TouchableOpacity  >
+                    <Text style={{ backgroundColor: "#E02041" }}>Go to second page</Text>
+                </TouchableOpacity>
+            </View>
+            
         </View>
     )
 }

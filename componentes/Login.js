@@ -22,7 +22,7 @@ function funcaoAjuda (){
 trocarsenhatop = (email, pass) => {
   alert('Atenção. Trocando sua senha: ' + email + '\nDigitado password: ' + pass)
 }
-const Login = ({estadoUsuario}) => {
+const Login  =  ({navigation}) => {
     const funcaoOnPressTitle = () => {
      alert("Informar seu e-mail corporativo.");
     };
