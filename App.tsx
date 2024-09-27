@@ -5,6 +5,9 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './pages/HomeScreen';
 import Login from './componentes/Login';
+import { TelaVazia } from './componentes/TelaVazia';
+import { TelaModal } from './componentes/TelaModal';
+import { TelaTrocarSenha } from './componentes/TelaTrocarSenha';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -17,6 +20,9 @@ function App(): React.JSX.Element {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="TelaVazia" component={TelaVazia} />
+        <Stack.Screen name="TelaModal" component={TelaModal} />
+        <Stack.Screen name="TelaTrocarSenha" component={TelaTrocarSenha} />
       </Stack.Navigator> 
       {/*<Tab.Navigator>
         <Tab.Screen name="Second">

@@ -68,9 +68,12 @@ const Login  =  ({navigation}) => {
           </TouchableOpacity>
           <View style={styles.buttonContainer}>
             <Button
-              onPress={funcaoEsqueciSenha}
+              onPress={() =>
+                navigation.navigate('TelaVazia')
+              }  
               title="Esqueci a senha"
               color="#841584"
+ 
             />
           </View>
           <View style={styles.alternativeLayoutButtonContainer}>
@@ -82,7 +85,8 @@ const Login  =  ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
                 style = {styles.button}
-                onPress = { () => {funcaoTrocarSenha()} }>
+                onPress = { () =>
+                  navigation.navigate('TelaTrocarSenha')}>
                 <Text style = {styles.buttonContainer}> Trocar Senha </Text>
           </TouchableOpacity>
       </View>
