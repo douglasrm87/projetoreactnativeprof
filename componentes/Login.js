@@ -76,6 +76,16 @@ const Login  =  ({navigation}) => {
  
             />
           </View>
+          <View style={styles.buttonContainer}>
+            <Button
+              onPress={() =>
+                navigation.navigate('TelaIdade')
+              }  
+              title="Tela Idade"
+              color="#841584"
+ 
+            />
+          </View>
           <View style={styles.alternativeLayoutButtonContainer}>
           <TouchableOpacity
                 style = {styles.button}
