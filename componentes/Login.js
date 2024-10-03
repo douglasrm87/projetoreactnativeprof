@@ -83,7 +83,15 @@ const Login  =  ({navigation}) => {
               }  
               title="Tela Idade"
               color="#841584"
- 
+            />
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button
+              onPress={() =>
+                navigation.navigate('TelaPrincipalHomeScreen')
+              }  
+              title="Tela SQLLite"
+              color="#841584"
             />
           </View>
           <View style={styles.alternativeLayoutButtonContainer}>
