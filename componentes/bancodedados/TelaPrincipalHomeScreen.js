@@ -31,9 +31,9 @@ export const TelaPrincipalHomeScreen = ({navigation}) => {
                     <TextoGenericoMyText02 text="Examplo do uso de Banco de dadose" />
                     <BotaoGenericoMyButton01 title="Cadastrar"  customClick={() => navigation.navigate('TelaCadastro')} />
                     <BotaoGenericoMyButton01 title="Selecionar Todos"  customClick={() => navigation.navigate('TelaConsulta')}  />
-                    <BotaoGenericoMyButton01 title="Atualizar" customClick={() => navigation.navigate('Update')} />
-                    <BotaoGenericoMyButton01 title="Selecionar"  customClick={() => navigation.navigate('ViewAll')}  />
-                    <BotaoGenericoMyButton01 title="Delete"  customClick={() => navigation.navigate('Delete')} />
+                    <BotaoGenericoMyButton01 title="Atualizar" customClick={() => navigation.navigate('TelaAtualizar')} />
+                    <BotaoGenericoMyButton01 title="Selecionar"  customClick={() => navigation.navigate('TelaConsultarByID')}  />
+                    <BotaoGenericoMyButton01 title="Delete"  customClick={() => navigation.navigate('TelaExcluir')} />
                  </View>
                  <Text  style={{ fontSize: 16, textAlign: 'center',  color: 'black'  }}>
                  https://github.com/douglasrm87 </Text>

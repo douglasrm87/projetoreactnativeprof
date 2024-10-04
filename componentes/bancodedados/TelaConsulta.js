@@ -5,7 +5,6 @@
 import React, { useState, useEffect } from 'react';
 import { FlatList, Text, View, SafeAreaView } from 'react-native';
 import { openDatabase } from 'react-native-sqlite-storage';
-import TextoGenericoMyText02 from './TextoGenericoMyText02';
 var db = openDatabase({ name: 'UserDatabase.db' });
 
 

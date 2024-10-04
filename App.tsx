@@ -12,6 +12,9 @@ import { TelaIdade } from './componentes/TelaIdade';
 import { TelaPrincipalHomeScreen } from './componentes/bancodedados/TelaPrincipalHomeScreen';
 import { TelaCadastro } from './componentes/bancodedados/TelaCadastro';
 import { TelaConsulta } from './componentes/bancodedados/TelaConsulta';
+import { TelaAtualizar } from './componentes/bancodedados/TelaAtualizar';
+import { TelaExcluir } from './componentes/bancodedados/TelaExcluir';
+import { TelaConsultarByID } from './componentes/bancodedados/TelaConsultarByID';
  
 
 const Stack = createStackNavigator();
@@ -32,9 +35,18 @@ function App(): React.JSX.Element {
         <Stack.Screen name="TelaPrincipalHomeScreen" component={TelaPrincipalHomeScreen} />
         <Stack.Screen name="TelaCadastro" component={TelaCadastro} />
         <Stack.Screen name="TelaConsulta" component={TelaConsulta} />
+        <Stack.Screen name="TelaConsultarByID" component={TelaConsultarByID} />
+        <Stack.Screen name="TelaAtualizar" component={TelaAtualizar} />
+        <Stack.Screen name="TelaExcluir" component={TelaExcluir} />
+
         
       </Stack.Navigator> 
       {/*<Tab.Navigator>
+              
+        <Stack.Screen name="TelaExcluir" component={TelaExcluir} />
+        
+
+
         <Tab.Screen name="Second">
             {() => (
               <Tab.Navigator>
