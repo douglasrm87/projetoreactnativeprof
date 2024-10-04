@@ -41,7 +41,7 @@ export const TelaCadastro = ({navigation}) => {
                 (tx, results) => {
                     console.log('Results', results.rowsAffected);
                     if (results.rowsAffected > 0) {
-                        Alert.alert('Success',  'You are Registered Successfully',
+                        Alert.alert('Sucesso',  'Dados gravados corretamente.',
                             [ {
                                 text: 'Ok',
                                 onPress: () => navigation.navigate('TelaPrincipalHomeScreen'),
@@ -52,14 +52,45 @@ export const TelaCadastro = ({navigation}) => {
         });
     };        
     return (
-        <View
-            style={{
-            flexDirection: 'row',
-            height: 100,
-            padding: 20
-            }}
-        >
-         
-        </View>
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={{ flex: 1, backgroundColor: 'white' }}>
+                <View style={{ flex: 1 }}>
+                    <ScrollView keyboardShouldPersistTaps="handled">
+                        <KeyboardAvoidingView
+                            behavior="padding"
+                            style={{ flex: 1, justifyContent: 'space-between' }}>
+
+                            <EntradaDadosGenerico03 placeholder="Digitar o nome"  
+                                onChangeText={
+                                    (userName) => setUserName(userName)
+                                }
+                                style={{ padding: 10 }}
+                            />
+                            <EntradaDadosGenerico03 placeholder="Digitar o Telefone"
+                                onChangeText={
+                                    (userContact) => setUserContact(userContact)
+                                }
+                                maxLength={10}
+                                keyboardType="numeric"
+                                style={{ padding: 10 }}
+                            />
+
+                            <EntradaDadosGenerico03  placeholder="Digitar o Endereço"
+                                onChangeText={
+                                    (userAddress) => setUserAddress(userAddress)
+                                }
+                                maxLength={225}
+                                numberOfLines={5}
+                                multiline={true}
+                                style={{ textAlignVertical: 'top', padding: 10 }}
+                            />
+                            <BotaoGenericoMyButton01 title="Enviar" customClick={register_user} />
+                        </KeyboardAvoidingView>
+                    </ScrollView>
+                </View> 
+                <Text  style={{ fontSize: 16, textAlign: 'center',  color: 'black'  }}>
+                 https://github.com/douglasrm87 </Text>
+            </View>
+        </SafeAreaView>
     );         
 }
