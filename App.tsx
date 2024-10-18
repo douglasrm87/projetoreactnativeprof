@@ -15,6 +15,7 @@ import { TelaConsulta } from './componentes/bancodedados/TelaConsulta';
 import { TelaAtualizar } from './componentes/bancodedados/TelaAtualizar';
 import { TelaExcluir } from './componentes/bancodedados/TelaExcluir';
 import { TelaConsultarByID } from './componentes/bancodedados/TelaConsultarByID';
+import AcessoAPI from './componentes/webservices/AcessoAPI';
  
 
 const Stack = createStackNavigator();
@@ -38,6 +39,7 @@ function App(): React.JSX.Element {
         <Stack.Screen name="TelaConsultarByID" component={TelaConsultarByID} />
         <Stack.Screen name="TelaAtualizar" component={TelaAtualizar} />
         <Stack.Screen name="TelaExcluir" component={TelaExcluir} />
+        <Stack.Screen name="AcessoAPI" component={AcessoAPI} />
 
         
       </Stack.Navigator> 

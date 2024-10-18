@@ -101,6 +101,7 @@ const Login  =  ({navigation}) => {
                 }>
                 <Text style = {styles.buttonContainer}> Ajuda </Text>
           </TouchableOpacity>
+
           <TouchableOpacity
                 style = {styles.button}
                 onPress = { () =>
@@ -108,6 +109,12 @@ const Login  =  ({navigation}) => {
                 <Text style = {styles.buttonContainer}> Trocar Senha </Text>
           </TouchableOpacity>
       </View>
+      <TouchableOpacity
+                style = {styles.button}
+                onPress = { () =>
+                  navigation.navigate('AcessoAPI')}>
+                <Text style = {styles.buttonContainer}> Acesso API </Text>
+          </TouchableOpacity>
     </View>
     )
 }
