@@ -112,7 +112,7 @@ const Login  =  ({navigation}) => {
       <TouchableOpacity
                 style = {styles.button}
                 onPress = { () =>
-                  navigation.navigate('AcessoAPI')}>
+                  navigation.navigate('AcessoAPIDigitarCEP')}>
                 <Text style = {styles.buttonContainer}> Acesso API </Text>
           </TouchableOpacity>
     </View>

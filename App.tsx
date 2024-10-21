@@ -1,5 +1,5 @@
 import React from 'react';
-
+//npx   react-native   run-android
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -16,6 +16,7 @@ import { TelaAtualizar } from './componentes/bancodedados/TelaAtualizar';
 import { TelaExcluir } from './componentes/bancodedados/TelaExcluir';
 import { TelaConsultarByID } from './componentes/bancodedados/TelaConsultarByID';
 import AcessoAPI from './componentes/webservices/AcessoAPI';
+import AcessoAPIDigitarCEP from './componentes/webservices/AcessoAPIDigitarCEP';
  
 
 const Stack = createStackNavigator();
@@ -40,6 +41,7 @@ function App(): React.JSX.Element {
         <Stack.Screen name="TelaAtualizar" component={TelaAtualizar} />
         <Stack.Screen name="TelaExcluir" component={TelaExcluir} />
         <Stack.Screen name="AcessoAPI" component={AcessoAPI} />
+        <Stack.Screen name="AcessoAPIDigitarCEP" component={AcessoAPIDigitarCEP} />
 
         
       </Stack.Navigator> 
