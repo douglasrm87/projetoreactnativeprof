@@ -2,16 +2,14 @@
 // AcessoAPI
 // npm install axios
 import React, { useEffect, useState } from 'react';
- import { FlatList, Text, View } from 'react-native';
+ import { Text, View } from 'react-native';
  import axios from 'axios';
  
  export default AcessoAPI = () => {
-     const [isLoading, setLoading] = useState(true);
-     const [data, setData] = useState();
- 
-     useEffect(() => {
- 
-     axios.get('http://cep.republicavirtual.com.br/web_cep.php?cep=80050350&formato=json')
+    const [isLoading, setLoading] = useState(true);
+    const [data, setData] = useState();
+    useEffect(() => {
+    axios.get('http://cep.republicavirtual.com.br/web_cep.php?cep=80050350&formato=json')
          .then(function (response) {
             // handle success
             console.log(response.data);
