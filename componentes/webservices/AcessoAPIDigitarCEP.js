@@ -1,5 +1,7 @@
 // npx   react-native   run-android
-// AcessoAPI
+// AcessoAPIs
+// https://medium.com/reactbrasil/10-apis-gr%C3%A1tis-e-legais-para-voc%C3%AA-consumir-69141988ea0b
+// https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t
 // npm install axios
 import React, {  useState } from 'react';
  import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';

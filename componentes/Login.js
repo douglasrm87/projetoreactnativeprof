@@ -108,13 +108,14 @@ const Login  =  ({navigation}) => {
                   navigation.navigate('TelaTrocarSenha')}>
                 <Text style = {styles.buttonContainer}> Trocar Senha </Text>
           </TouchableOpacity>
-      </View>
-      <TouchableOpacity
+          <TouchableOpacity
                 style = {styles.button}
                 onPress = { () =>
                   navigation.navigate('AcessoAPIDigitarCEP')}>
                 <Text style = {styles.buttonContainer}> Acesso API </Text>
           </TouchableOpacity>
+      </View>
+      
     </View>
     )
 }
@@ -125,10 +126,10 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     borderBottomLeftRadius: 30,
-  borderBottomRightRadius: 30,
-  borderTopRightRadius: 30,
-  borderTopLeftRadius: 30,
-  overflow: 'hidden',
+    borderBottomRightRadius: 30,
+    borderTopRightRadius: 30,
+    borderTopLeftRadius: 30,
+    overflow: 'hidden',
     margin: 20
   },
   input: {
@@ -144,14 +145,14 @@ const styles = StyleSheet.create({
    },
    button: {
     alignItems: "center",
-    margin: 20,
-    borderradius:15,
+    margin: 1,
+    borderradius:5,
     backgroundColor: "#DDDDDD",
     borderBottomLeftRadius: 30,
-  borderBottomRightRadius: 30,
-  borderTopRightRadius: 30,
-  borderTopLeftRadius: 30,
-  overflow: 'hidden',
+    borderBottomRightRadius: 30,
+    borderTopRightRadius: 30,
+    borderTopLeftRadius: 30,
+    overflow: 'hidden',
     padding: 10
   },
   alternativeLayoutButtonContainer: {

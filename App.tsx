@@ -17,6 +17,8 @@ import { TelaExcluir } from './componentes/bancodedados/TelaExcluir';
 import { TelaConsultarByID } from './componentes/bancodedados/TelaConsultarByID';
 import AcessoAPI from './componentes/webservices/AcessoAPI';
 import AcessoAPIDigitarCEP from './componentes/webservices/AcessoAPIDigitarCEP';
+import LoginAutenticar from './loginavancado/autenticar/LoginAutenticar';
+import CreateUser from './loginavancado/createUser/CreateUser';
  
 
 const Stack = createStackNavigator();
@@ -42,7 +44,9 @@ function App(): React.JSX.Element {
         <Stack.Screen name="TelaExcluir" component={TelaExcluir} />
         <Stack.Screen name="AcessoAPI" component={AcessoAPI} />
         <Stack.Screen name="AcessoAPIDigitarCEP" component={AcessoAPIDigitarCEP} />
-
+        <Stack.Screen name="LoginAutenticar" component={LoginAutenticar} /> 
+        <Stack.Screen name="CreateUser" component={CreateUser} /> 
+        
         
       </Stack.Navigator> 
       {/*<Tab.Navigator>
