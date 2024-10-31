@@ -95,28 +95,28 @@ const Login  =  ({navigation}) => {
             />
           </View>
           <View style={styles.alternativeLayoutButtonContainer}>
-          <TouchableOpacity
-                style = {styles.button}
-                onPress = { () => {funcaoAjuda()}
-                }>
-                <Text style = {styles.buttonContainer}> Ajuda </Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+                  style = {styles.button}
+                  onPress = { () => {funcaoAjuda()}
+                  }>
+                  <Text style = {styles.buttonContainer}> Ajuda </Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-                style = {styles.button}
-                onPress = { () =>
-                  navigation.navigate('TelaTrocarSenha')}>
-                <Text style = {styles.buttonContainer}> Trocar Senha </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-                style = {styles.button}
-                onPress = { () =>
-                  navigation.navigate('AcessoAPIDigitarCEP')}>
-                <Text style = {styles.buttonContainer}> Acesso API </Text>
-          </TouchableOpacity>
-      </View>
+            <TouchableOpacity
+                  style = {styles.button}
+                  onPress = { () =>
+                    navigation.navigate('TelaTrocarSenha')}>
+                  <Text style = {styles.buttonContainer}> Trocar Senha </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                  style = {styles.button}
+                  onPress = { () =>
+                    navigation.navigate('AcessoAPIDigitarCEP')}>
+                  <Text style = {styles.buttonContainer}> Acesso API </Text>
+            </TouchableOpacity>
+          </View>
       
-    </View>
+      </View>
     )
 }
 const styles = StyleSheet.create({
@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
       },
     
   titleText: {
+     margin: 10,
      fontSize: 40,
      fontWeight: "bold"
    },
@@ -156,7 +157,8 @@ const styles = StyleSheet.create({
     padding: 10
   },
   alternativeLayoutButtonContainer: {
-    margin: 20,
+    margin: 10,
+    alignItems: "center",
     flexDirection: 'row',
     justifyContent: 'space-between'
   }
