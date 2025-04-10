@@ -1,5 +1,6 @@
 import React from 'react';
-//npx   react-native   run-android
+// npx @react-native-community/cli@latest init projetoreactnativeprof
+// npx   react-native   run-android
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
