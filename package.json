@@ -27,6 +27,7 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
+    "@react-native-community/cli": "^18.0.0",
     "@react-native/babel-preset": "0.75.3",
     "@react-native/eslint-config": "0.75.3",
     "@react-native/metro-config": "0.75.3",
@@ -38,8 +39,7 @@
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "18.3.1",
-    "typescript": "5.0.4",
-    "@react-native-community/cli": "latest"
+    "typescript": "5.0.4"
   },
   "engines": {
     "node": ">=18"

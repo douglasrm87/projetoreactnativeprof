@@ -20,7 +20,9 @@ import AcessoAPI from './componentes/webservices/AcessoAPI';
 import AcessoAPIDigitarCEP from './componentes/webservices/AcessoAPIDigitarCEP';
 import LoginAutenticar from './loginavancado/autenticar/LoginAutenticar';
 import CreateUser from './loginavancado/createUser/CreateUser';
- 
+
+// npx react-native start
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
