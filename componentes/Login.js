@@ -84,7 +84,15 @@ const Login  =  ({navigation}) => {
               title="Tela Idade"
               color="#841584"
             />
+            <Button
+              onPress={() =>
+                navigation.navigate('TelaDatePicker')
+              }  
+              title="Tela Data Picker"
+              color="#841584"
+            />
           </View>
+      
           <View style={styles.buttonContainer}>
             <Button
               onPress={() =>

@@ -20,6 +20,7 @@ import AcessoAPI from './componentes/webservices/AcessoAPI';
 import AcessoAPIDigitarCEP from './componentes/webservices/AcessoAPIDigitarCEP';
 import LoginAutenticar from './loginavancado/autenticar/LoginAutenticar';
 import CreateUser from './loginavancado/createUser/CreateUser';
+import { TelaDatePicker } from './componentes/TelaDatePicker';
 
 // npx react-native start
 
@@ -49,7 +50,7 @@ function App(): React.JSX.Element {
         <Stack.Screen name="AcessoAPIDigitarCEP" component={AcessoAPIDigitarCEP} />
         <Stack.Screen name="LoginAutenticar" component={LoginAutenticar} /> 
         <Stack.Screen name="CreateUser" component={CreateUser} /> 
-        
+        <Stack.Screen name="TelaDatePicker" component={TelaDatePicker} /> 
         
       </Stack.Navigator> 
       {/*<Tab.Navigator>
