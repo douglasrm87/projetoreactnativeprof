@@ -3,7 +3,7 @@ import { View, Button, Platform, Text, StyleSheet } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 //import DateTimePickerModal from 'react-native-modal-datetime-picker';
-// Obsoleto - npm install react-native-datepicker --save
+// Obsoleto - npm install react-native-datepicker --save - não usar
 // npm install @react-native-community/datetimepicker
 // npm install react-native-modal-datetime-picker --save
 //@react-native-community/datetimepicker - recomendado
