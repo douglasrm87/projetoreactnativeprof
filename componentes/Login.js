@@ -12,6 +12,7 @@ function confereLogin(login, senha){
   const senhaDefault = '123'
   if(login == loginDefault && senha == senhaDefault){
     console.warn('Login Realizado!')
+    
   }else{
      console.warn('Login Inválido!')
   }
@@ -62,7 +63,10 @@ const Login  =  ({navigation}) => {
           <TouchableOpacity
                 style = {styles.button}
                 onPress = {
-                    () => {confereLogin(email, password)}
+                    () => {confereLogin(email, password)
+                      navigation.navigate('TelaTabScreenLayout')
+                    }
+                    
                 }>
                 <Text style = {styles.buttonContainer}> Confirmar Login </Text>
           </TouchableOpacity>

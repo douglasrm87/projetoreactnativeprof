@@ -21,6 +21,10 @@ import AcessoAPIDigitarCEP from './componentes/webservices/AcessoAPIDigitarCEP';
 import LoginAutenticar from './loginavancado/autenticar/LoginAutenticar';
 import CreateUser from './loginavancado/createUser/CreateUser';
 import { TelaDatePicker } from './componentes/TelaDatePicker';
+import { TelaTabScreenLayout } from './componentes/TelaTabScreenLayout';
+import { TabDiretor } from './componentes/navagacaotab/TabDiretor';
+import { TabGerente } from './componentes/navagacaotab/TabGerente';
+import { TabFuncionario } from './componentes/navagacaotab/TabFuncionario';
 
 // npx react-native start
 
@@ -51,6 +55,10 @@ function App(): React.JSX.Element {
         <Stack.Screen name="LoginAutenticar" component={LoginAutenticar} /> 
         <Stack.Screen name="CreateUser" component={CreateUser} /> 
         <Stack.Screen name="TelaDatePicker" component={TelaDatePicker} /> 
+        <Stack.Screen name="TelaTabScreenLayout" component={TelaTabScreenLayout} /> 
+        <Stack.Screen name="TabDiretor" component={TabDiretor} /> 
+        <Stack.Screen name="TabGerente" component={TabGerente} /> 
+        <Stack.Screen name="TabFuncionario" component={TabFuncionario} /> 
         
       </Stack.Navigator> 
       {/*<Tab.Navigator>
